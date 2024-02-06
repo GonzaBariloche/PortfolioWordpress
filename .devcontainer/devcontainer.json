@@ -1,0 +1,18 @@
+// Archivo para la configuración
+// .devcontainer/devcontainer.json
+
+{
+    "name": "WordPress Codespace",
+    "dockerFile": "Dockerfile",
+    "settings": { 
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "php.validate.executablePath": "/usr/bin/php",
+      "php.suggest.basic": false,
+    },
+    "extensions": [
+      "felixfbecker.php-debug",
+      "bmewburn.vscode-intelephense-client"
+    ],
+    "forwardPorts": [8000]
+  }
+  
